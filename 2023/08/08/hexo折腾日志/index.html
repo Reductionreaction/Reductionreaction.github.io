@@ -16,15 +16,15 @@
   <meta name="author" content="Reductionreaction">
   <meta name="keywords" content="">
   
-    <meta name="description" content="咱也没学过html,咱也不敢问 url设置:cry: 12permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;permalink_defaults:  改为 1234permalink: post&#x2F;:abbrlink.htmlabbrlink:    alg: crc32    rep: hex  就发生了一些奇怪的问题, 点击任何一篇只能链接到同一篇文章,改回来又正常了">
+    <meta name="description" content="咱也没学过html,咱也不敢问 8.5 url设置:cry: 12permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;permalink_defaults:  改为 1234permalink: post&#x2F;:abbrlink.htmlabbrlink:    alg: crc32    rep: hex  就发生了一些奇怪的问题, 点击任何一篇只能链接到同一篇文章,改回来又正">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo折腾日志">
 <meta property="og:url" content="http://example.com/2023/08/08/hexo%E6%8A%98%E8%85%BE%E6%97%A5%E5%BF%97/index.html">
 <meta property="og:site_name" content="加载可能会成功QAQ">
-<meta property="og:description" content="咱也没学过html,咱也不敢问 url设置:cry: 12permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;permalink_defaults:  改为 1234permalink: post&#x2F;:abbrlink.htmlabbrlink:    alg: crc32    rep: hex  就发生了一些奇怪的问题, 点击任何一篇只能链接到同一篇文章,改回来又正常了">
+<meta property="og:description" content="咱也没学过html,咱也不敢问 8.5 url设置:cry: 12permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;permalink_defaults:  改为 1234permalink: post&#x2F;:abbrlink.htmlabbrlink:    alg: crc32    rep: hex  就发生了一些奇怪的问题, 点击任何一篇只能链接到同一篇文章,改回来又正">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-08T02:41:53.000Z">
-<meta property="article:modified_time" content="2023-08-08T02:52:08.026Z">
+<meta property="article:modified_time" content="2023-08-10T20:01:11.890Z">
 <meta property="article:author" content="Reductionreaction">
 <meta property="article:tag" content="奇怪的东西">
 <meta name="twitter:card" content="summary_large_image">
@@ -218,7 +218,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          177 字
+          426 字
         
       </span>
     
@@ -229,7 +229,7 @@
         
         
         
-          2 分钟
+          4 分钟
         
       </span>
     
@@ -271,7 +271,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年8月8日 上午
+                    本文最后更新于：2023年8月11日 凌晨
                   
                 
               </p>
@@ -280,6 +280,7 @@
               <div class="markdown-body">
                 
                 <p> <del>咱也没学过html,咱也不敢问</del></p>
+<p>8.5</p>
 <p><strong>url设置:cry:</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-attr">permalink</span>: :year/:month/:day/:title/<br><span class="hljs-attr">permalink_defaults</span>:<br></code></pre></td></tr></table></figure>
 
@@ -287,6 +288,16 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-attr">permalink</span>: post/:abbrlink.<span class="hljs-property">html</span><br><span class="hljs-attr">abbrlink</span>:<br>    <span class="hljs-attr">alg</span>: crc32<br>    <span class="hljs-attr">rep</span>: hex<br></code></pre></td></tr></table></figure>
 
 <p>就发生了一些奇怪的问题, 点击任何一篇只能链接到同一篇文章,改回来又正常了</p>
+<p>8.11</p>
+<p>今天进行本地生成时发现**Permission denied. You can’t use port 4000.**4000可能被占用了(似乎也没有开其他的进程), 总之就是换一个port就好了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo s -p 5000<br></code></pre></td></tr></table></figure>
+
+<p><strong>插入图片</strong></p>
+<p>这里还是来一个比较靠谱的教程<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/265077468">hexo博客如何插入图片 - 知乎 (zhihu.com)</a></p>
+<p>but</p>
+<p>这些方法我用起来都不太行</p>
+<p>最后只有祭出图床大法才能成功（网址在这里<a target="_blank" rel="noopener" href="https://sm.ms/">Image Upload - SM.MS - Simple Free Image Hosting</a>）</p>
+<p>直接登录上传，然后复制md格式粘贴就好了</p>
 
                 
               </div>
@@ -330,7 +341,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年8月8日</div>
+          <div>2023年8月11日</div>
         </div>
       
       

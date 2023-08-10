@@ -23,14 +23,15 @@
 <meta property="og:site_name" content="加载可能会成功QAQ">
 <meta property="og:description" content="Matplotlib:laughing:不能直接上导图我也是没有办法 函数图像 废话不多说，直接上代码 123456789101112131415161718#正余弦函数import matplotlib.pyplot as pltimport mathimport numpy#将0-2Π分成100份X &#x3D; numpy.linspace(0,2*numpy.pi,100)Y &#x3D; numpy.sin">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="d:\pythonProject\result2.png">
-<meta property="og:image" content="d:\pythonProject\result3.png">
+<meta property="og:image" content="https://s2.loli.net/2023/08/11/EctlxGuVBIfbyzZ.jpg">
+<meta property="og:image" content="https://s2.loli.net/2023/08/11/AfGpRwaEmk52K1U.png">
+<meta property="og:image" content="https://s2.loli.net/2023/08/11/sMDF1LgbVrCjTim.png">
 <meta property="article:published_time" content="2023-08-07T06:25:07.000Z">
-<meta property="article:modified_time" content="2023-08-08T02:39:15.589Z">
+<meta property="article:modified_time" content="2023-08-10T20:01:45.868Z">
 <meta property="article:author" content="Reductionreaction">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="d:\pythonProject\result2.png">
+<meta name="twitter:image" content="https://s2.loli.net/2023/08/11/EctlxGuVBIfbyzZ.jpg">
   
   
   
@@ -274,7 +275,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年8月8日 上午
+                    本文最后更新于：2023年8月11日 凌晨
                   
                 
               </p>
@@ -289,14 +290,16 @@
 
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#一般函数</span><br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><br>X = <span class="hljs-built_in">range</span>(-<span class="hljs-number">100</span>,<span class="hljs-number">100</span>)<br><br>Y = [x**<span class="hljs-number">2</span> <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> X]<br><br>plt.plot(X,Y)<br>plt.savefig(<span class="hljs-string">&#x27;result1.png&#x27;</span>)<br>plt.show()<br></code></pre></td></tr></table></figure>
 
+<img src="https://s2.loli.net/2023/08/11/EctlxGuVBIfbyzZ.jpg" srcset="/img/loading.gif" lazyload alt="result1.jpg" style="zoom:67%;" />
+
 <p><strong>绘制统计图</strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#条形图</span><br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><span class="hljs-comment">#宽度是指标砖宽度的倍数</span><br>plt.bar([<span class="hljs-number">1980</span>,<span class="hljs-number">1985</span>,<span class="hljs-number">1990</span>,<span class="hljs-number">1995</span>],[<span class="hljs-number">1000</span>,<span class="hljs-number">3000</span>,<span class="hljs-number">4000</span>,<span class="hljs-number">5000</span>],width=<span class="hljs-number">3</span>)<br>plt.savefig(<span class="hljs-string">&#x27;result2.png&#x27;</span>)<br>plt.show()<br></code></pre></td></tr></table></figure>
 
-<img src="D:\pythonProject\result2.png" srcset="/img/loading.gif" lazyload alt="result2" style="zoom: 67%;" />
+<img src="https://s2.loli.net/2023/08/11/AfGpRwaEmk52K1U.png" srcset="/img/loading.gif" lazyload alt="result2.png" style="zoom:67%;" />
 
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#直方图和盒状图</span><br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><br>data = np.random.randn(<span class="hljs-number">100</span>)<br><span class="hljs-built_in">print</span>(data)<br><br><span class="hljs-built_in">print</span>(np.average(data))<br><br>fig,(ax1,ax2) = plt.subplots(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,figsize=(<span class="hljs-number">8</span>,<span class="hljs-number">8</span>))<br><br>ax1.hist(data,<span class="hljs-number">100</span>)<br>ax2.boxplot(data)<br><br>plt.savefig(<span class="hljs-string">&#x27;result3.png&#x27;</span>)<br>plt.show()<br></code></pre></td></tr></table></figure>
 
-<img src="D:\pythonProject\result3.png" srcset="/img/loading.gif" lazyload alt="result3" style="zoom:67%;" />
+<img src="https://s2.loli.net/2023/08/11/sMDF1LgbVrCjTim.png" srcset="/img/loading.gif" lazyload alt="result3.png" style="zoom:67%;" />
 
 <p><strong>添加标题</strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><span class="hljs-keyword">import</span> numpy<br><br><span class="hljs-comment">#如果包含中文标题需要写</span><br>plt.rcParams[<span class="hljs-string">&#x27;font.sans-serif&#x27;</span>] = [<span class="hljs-string">&#x27;SimHei&#x27;</span>]<br><br>X =numpy.linspace(-<span class="hljs-number">4</span>,<span class="hljs-number">4</span>,<span class="hljs-number">1024</span>)<br>Y = <span class="hljs-number">0.25</span>*(X+<span class="hljs-number">4</span>)*(X+<span class="hljs-number">1</span>)*(X-<span class="hljs-number">2</span>)<br><br>plt.title(<span class="hljs-string">&#x27;多项式曲线&#x27;</span>)<br><span class="hljs-comment">#设置latex标题需要</span><br><span class="hljs-comment">#plt.title(r&#x27;$...$&#x27;)</span><br><br>plt.plot(X,Y,c=<span class="hljs-string">&#x27;r&#x27;</span>)<br>plt.show()<br></code></pre></td></tr></table></figure>
@@ -346,7 +349,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年8月8日</div>
+          <div>2023年8月11日</div>
         </div>
       
       
