@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>Hyper-v + Ubuntu 折腾日志</title>
+    <link href="/2023/08/10/hyperv/"/>
+    <url>/2023/08/10/hyperv/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Hyper-v-Ubuntu-折腾日志-leaves"><a href="#Hyper-v-Ubuntu-折腾日志-leaves" class="headerlink" title="Hyper-v + Ubuntu 折腾日志:leaves:"></a>Hyper-v + Ubuntu 折腾日志:leaves:</h1><h2 id="安装Hyper-v"><a href="#安装Hyper-v" class="headerlink" title="安装Hyper-v"></a>安装Hyper-v</h2><p>win11家庭版中没有hyper-v，需要新建文本文档输入下面的指令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">pushd</span> <span class="hljs-string">&quot;%~dp0&quot;</span><br><span class="hljs-built_in">dir</span> /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt<br><span class="hljs-keyword">for</span> /f %%i <span class="hljs-keyword">in</span> (<span class="hljs-string">&#x27;findstr /i . hyper-v.txt 2^&gt;nul&#x27;</span>) <span class="hljs-keyword">do</span> dism /online /norestart /add-package:<span class="hljs-string">&quot;%SystemRoot%\servicing\Packages\%%i&quot;</span><br>del hyper-v.txt<br>Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL<br></code></pre></td></tr></table></figure><p>将文件名修改为hyper-v.cmd（包括后缀名）右键管理员权限运行，等待之后y重启</p><p>设置中搜索控制面板-&gt; 程序 –&gt; 启用或关闭windows的功能</p><p>找到hyper-v, 虚拟机监控, 虚拟机平台打开(可能会重启)</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>hexo折腾日志</title>
     <link href="/2023/08/08/hexo%E6%8A%98%E8%85%BE%E6%97%A5%E5%BF%97/"/>
     <url>/2023/08/08/hexo%E6%8A%98%E8%85%BE%E6%97%A5%E5%BF%97/</url>
