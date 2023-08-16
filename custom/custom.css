@@ -5,10 +5,3 @@ body {
   background-size: cover;  
 }
 
-.markedown-body pre code {
-  color: rgb(56 160 110);
-}
-
-code {
-  color: rgb(56 160 110);
-}
