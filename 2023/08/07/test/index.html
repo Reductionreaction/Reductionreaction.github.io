@@ -16,12 +16,12 @@
   <meta name="author" content="Reductionreaction">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Matplotlib:laughing:不能直接上导图我也是没有办法 函数图像 废话不多说，直接上代码 #正余弦函数 import matplotlib.pyplot as plt import math import numpy  #将0-2Π分成100份 X &#x3D; numpy.linspace(0,2*numpy.pi,100)  Y &#x3D; numpy.sin(X)  plt.plot(X,Y)">
+    <meta name="description" content="Matplotlib:laughing:不能直接上导图我也是没有办法 函数图像 废话不多说，直接上代码 123456789101112131415161718#正余弦函数import matplotlib.pyplot as pltimport mathimport numpy#将0-2Π分成100份X &#x3D; numpy.linspace(0,2*numpy.pi,100)Y &#x3D; numpy.sin">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一些py数据处理工具">
 <meta property="og:url" content="http://example.com/2023/08/07/test/index.html">
 <meta property="og:site_name" content="加载可能会成功QAQ">
-<meta property="og:description" content="Matplotlib:laughing:不能直接上导图我也是没有办法 函数图像 废话不多说，直接上代码 #正余弦函数 import matplotlib.pyplot as plt import math import numpy  #将0-2Π分成100份 X &#x3D; numpy.linspace(0,2*numpy.pi,100)  Y &#x3D; numpy.sin(X)  plt.plot(X,Y)">
+<meta property="og:description" content="Matplotlib:laughing:不能直接上导图我也是没有办法 函数图像 废话不多说，直接上代码 123456789101112131415161718#正余弦函数import matplotlib.pyplot as pltimport mathimport numpy#将0-2Π分成100份X &#x3D; numpy.linspace(0,2*numpy.pi,100)Y &#x3D; numpy.sin">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2023/08/11/EctlxGuVBIfbyzZ.jpg">
 <meta property="og:image" content="https://s2.loli.net/2023/08/11/AfGpRwaEmk52K1U.png">
@@ -46,8 +46,6 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
@@ -214,7 +212,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1k 字
+          1.2k 字
         
       </span>
     
@@ -225,7 +223,7 @@
         
         
         
-          9 分钟
+          10 分钟
         
       </span>
     
@@ -278,83 +276,23 @@
                 <h1 id="Matplotlib-laughing"><a href="#Matplotlib-laughing" class="headerlink" title="Matplotlib:laughing:"></a>Matplotlib:laughing:</h1><p><del>不能直接上导图我也是没有办法</del></p>
 <p><strong>函数图像</strong></p>
 <p>废话不多说，直接上代码</p>
-<figure><div class="code-wrapper"><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#正余弦函数</span>
-<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
-<span class="token keyword">import</span> math
-<span class="token keyword">import</span> numpy
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#正余弦函数</span><br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><span class="hljs-keyword">import</span> math<br><span class="hljs-keyword">import</span> numpy<br><br><span class="hljs-comment">#将0-2Π分成100份</span><br>X = numpy.linspace(<span class="hljs-number">0</span>,<span class="hljs-number">2</span>*numpy.pi,<span class="hljs-number">100</span>)<br><br>Y = numpy.sin(X)<br><br>plt.plot(X,Y)<br><br>Y = numpy.cos(X)<br><br>plt.plot(X,Y)<br><br>plt.savefig(<span class="hljs-string">&#x27;result2.png&#x27;</span>)<br>plt.show()<br></code></pre></td></tr></table></figure>
 
-<span class="token comment">#将0-2Π分成100份</span>
-X <span class="token operator">=</span> numpy<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token operator">*</span>numpy<span class="token punctuation">.</span>pi<span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span>
-
-Y <span class="token operator">=</span> numpy<span class="token punctuation">.</span>sin<span class="token punctuation">(</span>X<span class="token punctuation">)</span>
-
-plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>X<span class="token punctuation">,</span>Y<span class="token punctuation">)</span>
-
-Y <span class="token operator">=</span> numpy<span class="token punctuation">.</span>cos<span class="token punctuation">(</span>X<span class="token punctuation">)</span>
-
-plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>X<span class="token punctuation">,</span>Y<span class="token punctuation">)</span>
-
-plt<span class="token punctuation">.</span>savefig<span class="token punctuation">(</span><span class="token string">'result2.png'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
-
-<figure><div class="code-wrapper"><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#一般函数</span>
-<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
-
-X <span class="token operator">=</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span>
-
-Y <span class="token operator">=</span> <span class="token punctuation">[</span>x<span class="token operator">**</span><span class="token number">2</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> X<span class="token punctuation">]</span>
-
-plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>X<span class="token punctuation">,</span>Y<span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>savefig<span class="token punctuation">(</span><span class="token string">'result1.png'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#一般函数</span><br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><br>X = <span class="hljs-built_in">range</span>(-<span class="hljs-number">100</span>,<span class="hljs-number">100</span>)<br><br>Y = [x**<span class="hljs-number">2</span> <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> X]<br><br>plt.plot(X,Y)<br>plt.savefig(<span class="hljs-string">&#x27;result1.png&#x27;</span>)<br>plt.show()<br></code></pre></td></tr></table></figure>
 
 <img src="https://s2.loli.net/2023/08/11/EctlxGuVBIfbyzZ.jpg" srcset="/img/loading.gif" lazyload alt="result1.jpg" style="zoom:67%;" />
 
 <p><strong>绘制统计图</strong></p>
-<figure><div class="code-wrapper"><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#条形图</span>
-<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
-<span class="token comment">#宽度是指标砖宽度的倍数</span>
-plt<span class="token punctuation">.</span>bar<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1980</span><span class="token punctuation">,</span><span class="token number">1985</span><span class="token punctuation">,</span><span class="token number">1990</span><span class="token punctuation">,</span><span class="token number">1995</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">1000</span><span class="token punctuation">,</span><span class="token number">3000</span><span class="token punctuation">,</span><span class="token number">4000</span><span class="token punctuation">,</span><span class="token number">5000</span><span class="token punctuation">]</span><span class="token punctuation">,</span>width<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>savefig<span class="token punctuation">(</span><span class="token string">'result2.png'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#条形图</span><br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><span class="hljs-comment">#宽度是指标砖宽度的倍数</span><br>plt.bar([<span class="hljs-number">1980</span>,<span class="hljs-number">1985</span>,<span class="hljs-number">1990</span>,<span class="hljs-number">1995</span>],[<span class="hljs-number">1000</span>,<span class="hljs-number">3000</span>,<span class="hljs-number">4000</span>,<span class="hljs-number">5000</span>],width=<span class="hljs-number">3</span>)<br>plt.savefig(<span class="hljs-string">&#x27;result2.png&#x27;</span>)<br>plt.show()<br></code></pre></td></tr></table></figure>
 
 <img src="https://s2.loli.net/2023/08/11/AfGpRwaEmk52K1U.png" srcset="/img/loading.gif" lazyload alt="result2.png" style="zoom:67%;" />
 
-<figure><div class="code-wrapper"><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#直方图和盒状图</span>
-<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
-<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-
-data <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>randn<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
-
-<span class="token keyword">print</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>average<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-fig<span class="token punctuation">,</span><span class="token punctuation">(</span>ax1<span class="token punctuation">,</span>ax2<span class="token punctuation">)</span> <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-ax1<span class="token punctuation">.</span>hist<span class="token punctuation">(</span>data<span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span>
-ax2<span class="token punctuation">.</span>boxplot<span class="token punctuation">(</span>data<span class="token punctuation">)</span>
-
-plt<span class="token punctuation">.</span>savefig<span class="token punctuation">(</span><span class="token string">'result3.png'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#直方图和盒状图</span><br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><br>data = np.random.randn(<span class="hljs-number">100</span>)<br><span class="hljs-built_in">print</span>(data)<br><br><span class="hljs-built_in">print</span>(np.average(data))<br><br>fig,(ax1,ax2) = plt.subplots(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,figsize=(<span class="hljs-number">8</span>,<span class="hljs-number">8</span>))<br><br>ax1.hist(data,<span class="hljs-number">100</span>)<br>ax2.boxplot(data)<br><br>plt.savefig(<span class="hljs-string">&#x27;result3.png&#x27;</span>)<br>plt.show()<br></code></pre></td></tr></table></figure>
 
 <img src="https://s2.loli.net/2023/08/11/sMDF1LgbVrCjTim.png" srcset="/img/loading.gif" lazyload alt="result3.png" style="zoom:67%;" />
 
 <p><strong>添加标题</strong></p>
-<figure><div class="code-wrapper"><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
-<span class="token keyword">import</span> numpy
-
-<span class="token comment">#如果包含中文标题需要写</span>
-plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.sans-serif'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'SimHei'</span><span class="token punctuation">]</span>
-
-X <span class="token operator">=</span>numpy<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">1024</span><span class="token punctuation">)</span>
-Y <span class="token operator">=</span> <span class="token number">0.25</span><span class="token operator">*</span><span class="token punctuation">(</span>X<span class="token operator">+</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span>X<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span>X<span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span>
-
-plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'多项式曲线'</span><span class="token punctuation">)</span>
-<span class="token comment">#设置latex标题需要</span>
-<span class="token comment">#plt.title(r'$...$')</span>
-
-plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>X<span class="token punctuation">,</span>Y<span class="token punctuation">,</span>c<span class="token operator">=</span><span class="token string">'r'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><span class="hljs-keyword">import</span> numpy<br><br><span class="hljs-comment">#如果包含中文标题需要写</span><br>plt.rcParams[<span class="hljs-string">&#x27;font.sans-serif&#x27;</span>] = [<span class="hljs-string">&#x27;SimHei&#x27;</span>]<br><br>X =numpy.linspace(-<span class="hljs-number">4</span>,<span class="hljs-number">4</span>,<span class="hljs-number">1024</span>)<br>Y = <span class="hljs-number">0.25</span>*(X+<span class="hljs-number">4</span>)*(X+<span class="hljs-number">1</span>)*(X-<span class="hljs-number">2</span>)<br><br>plt.title(<span class="hljs-string">&#x27;多项式曲线&#x27;</span>)<br><span class="hljs-comment">#设置latex标题需要</span><br><span class="hljs-comment">#plt.title(r&#x27;$...$&#x27;)</span><br><br>plt.plot(X,Y,c=<span class="hljs-string">&#x27;r&#x27;</span>)<br>plt.show()<br></code></pre></td></tr></table></figure>
 
 <h1 id="Pandas"><a href="#Pandas" class="headerlink" title="Pandas"></a>Pandas</h1><p>这里还是先找一个教程 </p>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/99889912">【十分钟Python知识点】pandas最详细教程 - 知乎 (zhihu.com)</a></p>
@@ -678,8 +616,6 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
   });
 </script>
 
-
-  <script  src="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js" ></script>
 
   <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
 

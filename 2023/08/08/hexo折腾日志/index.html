@@ -16,19 +16,19 @@
   <meta name="author" content="Reductionreaction">
   <meta name="keywords" content="">
   
-    <meta name="description" content="咱也没学过html,咱也不敢问 8.5 url设置:cry: permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F; permalink_defaults:  改为 permalink: post&#x2F;:abbrlink.html abbrlink:     alg: crc32     rep: hex  就发生了一些奇怪的问题, 点击任何一篇只能链接到同一篇文章,改回来又正常了">
+    <meta name="description" content="咱也没学过html,咱也不敢问 8.5 url设置:cry:12permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;permalink_defaults:  改为 1234permalink: post&#x2F;:abbrlink.htmlabbrlink:    alg: crc32    rep: hex  就发生了一些奇怪的问题, 点击任何一篇只能链接到同一篇文章,改回来又正常">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo折腾日志(主要是各种配置)">
 <meta property="og:url" content="http://example.com/2023/08/08/hexo%E6%8A%98%E8%85%BE%E6%97%A5%E5%BF%97/index.html">
 <meta property="og:site_name" content="加载可能会成功QAQ">
-<meta property="og:description" content="咱也没学过html,咱也不敢问 8.5 url设置:cry: permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F; permalink_defaults:  改为 permalink: post&#x2F;:abbrlink.html abbrlink:     alg: crc32     rep: hex  就发生了一些奇怪的问题, 点击任何一篇只能链接到同一篇文章,改回来又正常了">
+<meta property="og:description" content="咱也没学过html,咱也不敢问 8.5 url设置:cry:12permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;permalink_defaults:  改为 1234permalink: post&#x2F;:abbrlink.htmlabbrlink:    alg: crc32    rep: hex  就发生了一些奇怪的问题, 点击任何一篇只能链接到同一篇文章,改回来又正常">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2023/08/15/sDQ5BivKyNzRk71.png">
 <meta property="og:image" content="https://s2.loli.net/2023/08/15/wZBNCyAfQxsXFbj.png">
 <meta property="og:image" content="https://s2.loli.net/2023/08/15/2Pv3sMo5LmtRfB1.png">
 <meta property="og:image" content="https://s2.loli.net/2023/08/15/EKkHwGygQJTWcLO.png">
 <meta property="article:published_time" content="2023-08-08T02:41:53.000Z">
-<meta property="article:modified_time" content="2023-08-15T13:43:45.701Z">
+<meta property="article:modified_time" content="2023-08-17T15:09:09.539Z">
 <meta property="article:author" content="Reductionreaction">
 <meta property="article:tag" content="奇怪的东西">
 <meta name="twitter:card" content="summary_large_image">
@@ -47,8 +47,6 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
@@ -215,7 +213,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          967 字
+          1.8k 字
         
       </span>
     
@@ -226,7 +224,7 @@
         
         
         
-          9 分钟
+          16 分钟
         
       </span>
     
@@ -268,7 +266,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年8月15日 晚上
+                    本文最后更新于：2023年8月17日 晚上
                   
                 
               </p>
@@ -278,39 +276,30 @@
                 
                 <p> <del>咱也没学过html,咱也不敢问</del></p>
 <p>8.5</p>
-<p><strong>url设置:cry:</strong></p>
-<figure><div class="code-wrapper"><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">permalink</span><span class="token operator">:</span> <span class="token operator">:</span>year<span class="token operator">/</span><span class="token operator">:</span>month<span class="token operator">/</span><span class="token operator">:</span>day<span class="token operator">/</span><span class="token operator">:</span>title<span class="token operator">/</span>
-<span class="token literal-property property">permalink_defaults</span><span class="token operator">:</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div></figure>
+<h2 id="url设置-cry"><a href="#url设置-cry" class="headerlink" title="url设置:cry:"></a><strong>url设置:cry:</strong></h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-attr">permalink</span>: :year/:month/:day/:title/<br><span class="hljs-attr">permalink_defaults</span>:<br></code></pre></td></tr></table></figure>
 
 <p>改为</p>
-<figure><div class="code-wrapper"><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">permalink</span><span class="token operator">:</span> post<span class="token operator">/</span><span class="token operator">:</span>abbrlink<span class="token punctuation">.</span>html
-<span class="token literal-property property">abbrlink</span><span class="token operator">:</span>
-    <span class="token literal-property property">alg</span><span class="token operator">:</span> crc32
-    <span class="token literal-property property">rep</span><span class="token operator">:</span> hex<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-attr">permalink</span>: post/:abbrlink.<span class="hljs-property">html</span><br><span class="hljs-attr">abbrlink</span>:<br>    <span class="hljs-attr">alg</span>: crc32<br>    <span class="hljs-attr">rep</span>: hex<br></code></pre></td></tr></table></figure>
 
 <p>就发生了一些奇怪的问题, 点击任何一篇只能链接到同一篇文章,改回来又正常了</p>
 <p>8.11</p>
 <p>今天进行本地生成时发现**Permission denied. You can’t use port 4000.**4000可能被占用了(似乎也没有开其他的进程), 总之就是换一个port就好了</p>
-<figure><div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo s <span class="token parameter variable">-p</span> <span class="token number">5000</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo s -p 5000<br></code></pre></td></tr></table></figure>
 
 <hr>
-<p><strong>插入图片</strong></p>
-<p>这里还是来一个比较靠谱的教程<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/265077468">hexo博客如何插入图片 - 知乎 (zhihu.com)</a></p>
+<h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a><strong>插入图片</strong></h2><p>这里还是来一个比较靠谱的教程<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/265077468">hexo博客如何插入图片 - 知乎 (zhihu.com)</a></p>
 <p>but</p>
 <p>这些方法我用起来都不太行</p>
 <p>最后只有祭出图床大法才能成功（网址在这里<a target="_blank" rel="noopener" href="https://sm.ms/">Image Upload - SM.MS - Simple Free Image Hosting</a>）</p>
 <p>直接登录上传，然后复制md格式粘贴就好了</p>
 <hr>
 <p>一般会遇到<strong>fatal: unable to access ‘<a target="_blank" rel="noopener" href="https://github.com/Reductionreaction/Reductionreaction.github.io.git/">https://github.com/Reductionreaction/Reductionreaction.github.io.git/</a>‘: Recv failure: Connection was reset</strong>这样的报错，需要取消git本身的代理</p>
-<figure><div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> config <span class="token parameter variable">--global</span> <span class="token parameter variable">--unset</span> http.proxy
-
-<span class="token function">git</span> config <span class="token parameter variable">--global</span> <span class="token parameter variable">--unset</span> https.proxy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global --<span class="hljs-built_in">unset</span> http.proxy<br><br>git config --global --<span class="hljs-built_in">unset</span> https.proxy<br></code></pre></td></tr></table></figure>
 
 <p>然后直接上传或者科学上网就好了<del>(总觉得这种bug是概率事件)</del></p>
 <p>今天发现很久没有deploy的原因了:laughing:, branch里面main居然拼错了,多加了’</p>
 <hr>
-<p><strong>添加评论功能</strong></p>
-<p>我这里使用的是giscus</p>
+<h2 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a><strong>添加评论功能</strong></h2><p>我这里使用的是giscus</p>
 <p>1.新建github仓库</p>
 <p>在新建的仓库中安装giscus(这是安装链接)<a target="_blank" rel="noopener" href="https://github.com/apps/giscus">GitHub Apps - giscus</a></p>
 <p>然后在仓库的settings中打开discuss功能(第二个选项打开)</p>
@@ -327,6 +316,21 @@
 <p>下面的分类选刚建好的Announcements</p>
 <p>之后把生成的配置填进theme的_config,yml文件的对应位置就好哩(配置文件没有的可以不抄)</p>
 <img src="https://s2.loli.net/2023/08/15/EKkHwGygQJTWcLO.png" srcset="/img/loading.gif" lazyload alt="image-20230815213802803-16921066847057.png" style="zoom:67%;" />
+
+<h2 id="ERROR：-Fluid-highlightjs-style-‘github’-not-found-一种处理方式"><a href="#ERROR：-Fluid-highlightjs-style-‘github’-not-found-一种处理方式" class="headerlink" title="ERROR：[Fluid] highlightjs style ‘github’ not found 一种处理方式"></a>ERROR：[Fluid] highlightjs style ‘github’ not found 一种处理方式</h2><p>这个问题出现很久了，今天发现其实很好处理</p>
+<p>先把hexo自带的highlight功能关闭，只开fliud里面的（否则会相互影响）</p>
+<p>检查自己是否安装了highlightjs插件(我用的淘宝镜像), 然后查看node_modules中这个插件文件夹到底叫啥, 我的是highlightjs</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">cnpm install highlightjs<br></code></pre></td></tr></table></figure>
+
+<p>之后打开<strong>myblog\themes\fluid\scripts\events\lib</strong>中hightlight.js文件</p>
+<p>找到这里</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> file = <span class="hljs-title function_">resolveModule</span>(<span class="hljs-string">&#x27;highlight.js&#x27;</span>, <span class="hljs-string">`styles/<span class="hljs-subst">$&#123;cssName&#125;</span>.css`</span>);<br>    <span class="hljs-keyword">if</span> (cssName === <span class="hljs-string">&#x27;github-gist&#x27;</span> &amp;&amp; !fs.<span class="hljs-title function_">existsSync</span>(file)) &#123;<br>      file = <span class="hljs-title function_">resolveModule</span>(<span class="hljs-string">&#x27;highlight.js&#x27;</span>, <span class="hljs-string">&#x27;styles/github.css&#x27;</span>);<br></code></pre></td></tr></table></figure>
+
+<p>将1.3行中highlight.js改为找到文件夹的名字, 我的是</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> file = <span class="hljs-title function_">resolveModule</span>(<span class="hljs-string">&#x27;highlightjs&#x27;</span>, <span class="hljs-string">`styles/<span class="hljs-subst">$&#123;cssName&#125;</span>.css`</span>);<br>    <span class="hljs-keyword">if</span> (cssName === <span class="hljs-string">&#x27;github-gist&#x27;</span> &amp;&amp; !fs.<span class="hljs-title function_">existsSync</span>(file)) &#123;<br>      file = <span class="hljs-title function_">resolveModule</span>(<span class="hljs-string">&#x27;highlightjs&#x27;</span>, <span class="hljs-string">&#x27;styles/github.css&#x27;</span>);<br></code></pre></td></tr></table></figure>
+
+<p>然后就可以找到对应的主题了</p>
+<p>ps: 这里应该是一个削小的bug, 如果没有看错的话这里是需要寻找的文件夹名, <del>或许以前确实是叫.js</del></p>
 
                 
               </div>
@@ -370,7 +374,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年8月15日</div>
+          <div>2023年8月17日</div>
         </div>
       
       
@@ -653,8 +657,6 @@
   });
 </script>
 
-
-  <script  src="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js" ></script>
 
   <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
 
