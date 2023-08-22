@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://s2.loli.net/2023/08/15/2Pv3sMo5LmtRfB1.png">
 <meta property="og:image" content="https://s2.loli.net/2023/08/15/EKkHwGygQJTWcLO.png">
 <meta property="article:published_time" content="2023-08-08T02:41:53.000Z">
-<meta property="article:modified_time" content="2023-08-17T15:09:09.539Z">
+<meta property="article:modified_time" content="2023-08-17T15:12:00.141Z">
 <meta property="article:author" content="Reductionreaction">
 <meta property="article:tag" content="奇怪的东西">
 <meta name="twitter:card" content="summary_large_image">
@@ -73,6 +73,7 @@
   
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/shubiao.css">
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/scroll.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/gradient.css">
 <link rel="stylesheet" href="/css/cloudedGlass.css">
 
 
@@ -329,7 +330,7 @@
 <p>将1.3行中highlight.js改为找到文件夹的名字, 我的是</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> file = <span class="hljs-title function_">resolveModule</span>(<span class="hljs-string">&#x27;highlightjs&#x27;</span>, <span class="hljs-string">`styles/<span class="hljs-subst">$&#123;cssName&#125;</span>.css`</span>);<br>    <span class="hljs-keyword">if</span> (cssName === <span class="hljs-string">&#x27;github-gist&#x27;</span> &amp;&amp; !fs.<span class="hljs-title function_">existsSync</span>(file)) &#123;<br>      file = <span class="hljs-title function_">resolveModule</span>(<span class="hljs-string">&#x27;highlightjs&#x27;</span>, <span class="hljs-string">&#x27;styles/github.css&#x27;</span>);<br></code></pre></td></tr></table></figure>
 
-<p>然后就可以找到对应的主题了</p>
+<p>然后就可以找到对应的主题了，如果是prismjs的话也是相同操作，找插件的文件夹名对应修改</p>
 <p>ps: 这里应该是一个削小的bug, 如果没有看错的话这里是需要寻找的文件夹名, <del>或许以前确实是叫.js</del></p>
 
                 
