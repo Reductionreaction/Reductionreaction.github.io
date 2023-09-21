@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Ubuntu日志</title>
+    <link href="/2023/09/22/Ubuntu%E6%97%A5%E5%BF%97/"/>
+    <url>/2023/09/22/Ubuntu%E6%97%A5%E5%BF%97/</url>
+    
+    <content type="html"><![CDATA[<h2 id="关于魔法科学上网工具"><a href="#关于魔法科学上网工具" class="headerlink" title="关于魔法科学上网工具"></a>关于<del>魔法</del>科学上网工具</h2><p>  官方教程里推荐使用clash, 然而由于自身技术不够硬用不了。后来发现clash for windows(以下简称cfw)发布了linux版本, 配置非常容易。需要将网络代理设置为手动，将本地端口改为cfw默认的7680（似乎是这个）,https和https协议都需要设置，代理ip都可以设置成127.0.0.1，然后在profile中粘贴订阅商的订阅链接就可以使用了。</p><p>ps 如果linux下没有现成的订阅链接，可以先在windows中配置好cfw然后将相应配置的url粘贴到Ubuntu下就好了。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>奇怪的东西</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>女士品茶读书笔记</title>
     <link href="/2023/09/04/reading/"/>
     <url>/2023/09/04/reading/</url>
